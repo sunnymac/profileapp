@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
      
       home: Scaffold(
-        backgroundColor: Colors.grey.shade300 ,
+        backgroundColor: Color.fromRGBO(250, 250, 250, 1),
         appBar: AppBar(
           title: Text("My Profile"),
           backgroundColor: Colors.blueGrey,
@@ -53,7 +53,7 @@ class MyApp extends StatelessWidget {
                         color: Colors.grey
                       ),),
                       SizedBox(
-                        height: 60,
+                        height: 70,
                       ),
                       Row(
                         children: [
@@ -61,11 +61,11 @@ class MyApp extends StatelessWidget {
                             height: 30,
                             width: 40,
                             decoration: BoxDecoration(
-                                color: Colors.blueGrey,
+                                color: Color.fromRGBO(253, 236, 221, 1),
                               borderRadius: BorderRadius.all(Radius.circular(10))
                             ),
                           
-                            child: Icon(Icons.mail, color: Colors.deepOrange,)),
+                            child: Icon(Icons.mail, color: Color.fromRGBO(250, 186, 123, 1),)),
                             SizedBox(
                               width: 10,
                             ),
@@ -73,22 +73,22 @@ class MyApp extends StatelessWidget {
                             height: 30,
                             width: 40,
                             decoration: BoxDecoration(
-                                color: Colors.blueGrey,
+                                color: Color.fromRGBO(255, 242, 240, 1),
                               borderRadius: BorderRadius.all(Radius.circular(10))
                             ),
                           
-                            child: Icon(Icons.mail, color: Colors.deepOrange,)),
+                            child: Icon(Icons.call, color: Color.fromRGBO(242, 146, 151, 1),)),
                             SizedBox(width: 10,),
                           
                               Container(
                             height: 30,
                             width: 40,
                             decoration: BoxDecoration(
-                                color: Colors.blueGrey,
+                                color: Color.fromRGBO(235, 237, 238, 1),
                               borderRadius: BorderRadius.all(Radius.circular(10))
                             ),
                           
-                            child: Icon(Icons.mail, color: Colors.deepOrange,)),
+                            child: Icon(Icons.video_call_outlined, color: Color.fromRGBO(168, 170, 185, 1),)),
                           
 
                           
@@ -109,7 +109,8 @@ SizedBox(
 ),
 Text("asdasda dadada  da dasf afaf af af afafa faf af a fa f a fa fafaf aafafaf afafaf afaf af af a fa fafafa fafa fafa fa fafaf a fafafa f af a fff fasfaf a a fa f af a fa sf as asfasfa f as fa f af a f afafaf a faf", 
 style: TextStyle(
-  color: Colors.grey
+  color: Colors.grey,
+  fontSize: 15
 ),
 ),
 SizedBox(
