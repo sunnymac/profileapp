@@ -30,7 +30,10 @@ class MyApp extends StatelessWidget {
                 Container(
                   height: 150,
                   width: 100,
-                  color: Colors.orange,
+                  //color: Colors.orange,
+                  child: Image.asset("assets/images/person.jpg", 
+                  ),
+                 
                 ),
                 SizedBox(
                   width: 20,
@@ -41,11 +44,11 @@ class MyApp extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text("Prof. Sanjay Makwana", style: TextStyle(
+                      Text("ABC XYZ", style: TextStyle(
                         fontSize: 20,
                         fontWeight: FontWeight.bold
                       ),),
-                      Text("Freelance Flutter Dev", style: 
+                      Text("Model", style: 
                       TextStyle(
                         color: Colors.grey
                       ),),
@@ -57,25 +60,35 @@ class MyApp extends StatelessWidget {
                           Container(
                             height: 30,
                             width: 40,
-                            color: Colors.orange.shade100,
-                            child: Icon(Icons.access_alarm)),
-                            SizedBox(
-                              width: 10,
-                            ),
-                            Container(
-                            height: 30,
-                            width: 40,
-                            color: Colors.orange.shade100,
-                            child: Icon(Icons.access_alarm)),
-                            SizedBox(
-                              width: 10,
+                            decoration: BoxDecoration(
+                                color: Colors.blueGrey,
+                              borderRadius: BorderRadius.all(Radius.circular(10))
                             ),
                           
-                          Container(
+                            child: Icon(Icons.mail, color: Colors.deepOrange,)),
+                            SizedBox(
+                              width: 10,
+                            ),
+                                Container(
                             height: 30,
                             width: 40,
-                            color: Colors.orange.shade100,
-                            child: Icon(Icons.access_alarm)),
+                            decoration: BoxDecoration(
+                                color: Colors.blueGrey,
+                              borderRadius: BorderRadius.all(Radius.circular(10))
+                            ),
+                          
+                            child: Icon(Icons.mail, color: Colors.deepOrange,)),
+                            SizedBox(width: 10,),
+                          
+                              Container(
+                            height: 30,
+                            width: 40,
+                            decoration: BoxDecoration(
+                                color: Colors.blueGrey,
+                              borderRadius: BorderRadius.all(Radius.circular(10))
+                            ),
+                          
+                            child: Icon(Icons.mail, color: Colors.deepOrange,)),
                           
 
                           
@@ -103,7 +116,29 @@ SizedBox(
   height: 50,
 ),
 
-Text("Activity"),
+Row(
+  children: [
+    Container(
+      child: Row(
+        children: [
+          Icon(Icons.ac_unit
+        ),
+        Column(
+          children: [
+            Text("Address"),
+            Text("asdadad ")
+          ],
+        )
+        ],
+      ),
+    ),
+    Container()
+  ],
+),
+Text("Activity", style: TextStyle(
+  fontSize: 25,
+
+),),
 Row(
   children: [
     
