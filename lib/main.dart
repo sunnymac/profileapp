@@ -44,16 +44,20 @@ class MyApp extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text("ABC XYZ", style: TextStyle(
-                        fontSize: 20,
-                        fontWeight: FontWeight.bold
-                      ),),
-                      Text("Model", style: 
+                      SizedBox(
+                        width: 130,
+                        child: Text("PRIYANKA CHOPRA", style: TextStyle(
+                          fontSize: 30,
+                          fontWeight: FontWeight.bold,
+                          fontFamily: 'myfont'
+                        ),),
+                      ),
+                      Text("Actor and Model", style: 
                       TextStyle(
                         color: Colors.grey
                       ),),
                       SizedBox(
-                        height: 70,
+                        height: 30,
                       ),
                       Row(
                         children: [
@@ -107,7 +111,7 @@ Text("About", style: TextStyle(fontSize: 25),),
 SizedBox(
   height: 10,
 ),
-Text("asdasda dadada  da dasf afaf af af afafa faf af a fa f a fa fafaf aafafaf afafaf afaf af af a fa fafafa fafa fafa fa fafaf a fafafa f af a fff fasfaf a a fa f af a fa sf as asfasfa f as fa f af a f afafaf a faf", 
+Text("Unique fashion model seeking to add prestige value for IMG's clients. 34/25/36, 5'9, 120 lbs. At Old Port Modeling Agency, modeled for 20+ clients in advertisements and on runways, including L.L. Bean and Vita Coco. At Ten City Talent, appeared in 25 commercials for strong local brands.", 
 style: TextStyle(
   color: Colors.grey,
   fontSize: 15
@@ -148,6 +152,7 @@ Row(
             )
             ],
           ),
+          SizedBox(height: 15,),
           Row(
             children: [
               Icon(Icons.alarm
@@ -179,24 +184,44 @@ Row(
     )
   ],
 ),
+SizedBox(height: 20,),
 Text("Activity", style: TextStyle(
   fontSize: 25,
 
 ),),
+SizedBox(height: 20,),
 Row(
+  mainAxisAlignment: MainAxisAlignment.spaceBetween,
   children: [
     
     Container(
+      decoration: BoxDecoration(
+         color: Color.fromRGBO(251, 186, 123, 1),
+         borderRadius: BorderRadius.circular(20)
+      ),
+      alignment: Alignment.center,
       height: 100,
       width: 150,
-      color: Colors.amber,
-      child: Text("left"),
+     
+      child: Text("Follow me on Youtube", style: TextStyle(
+        fontSize: 18,
+        color: Colors.white,
+        fontWeight: FontWeight.bold
+      ),),
     ),
     Container(
+       alignment: Alignment.center,
       height: 100,
       width: 150,
-      color: Colors.amber,
-      child: Text("right"),
+       decoration: BoxDecoration(
+         color: Color.fromRGBO(165, 165, 165, 1),
+         borderRadius: BorderRadius.circular(20)
+      ),
+      child: Text("Follow me on Instagram", style: TextStyle(
+        fontSize: 18,
+        color: Colors.white,
+        fontWeight: FontWeight.bold
+      ),),
     ),
       
   ],
