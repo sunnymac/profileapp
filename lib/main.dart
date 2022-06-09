@@ -118,22 +118,65 @@ SizedBox(
 ),
 
 Row(
+  mainAxisAlignment: MainAxisAlignment.spaceBetween,
   children: [
     Container(
-      child: Row(
+    
+      child: Column(
+    
         children: [
-          Icon(Icons.ac_unit
-        ),
-        Column(
-          children: [
-            Text("Address"),
-            Text("asdadad ")
-          ],
-        )
+          Row(
+          
+            children: [
+              Icon(Icons.location_on
+            ),
+            SizedBox(width: 10,),
+            Column(
+               crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text("Address", style: TextStyle(
+                  fontSize: 18
+                ),),
+                SizedBox(
+                  width: 180,
+                  child: Text("Rancharda, Gruh Gardens Rd, थलतेज, Ahmedabad, Gujarat 382115 ",
+                  style: TextStyle( color: Colors.grey, fontSize: 17),
+                      overflow: TextOverflow.ellipsis,
+                  maxLines: 50,),
+                )
+              ],
+            )
+            ],
+          ),
+          Row(
+            children: [
+              Icon(Icons.alarm
+            ),
+            SizedBox(width: 10,),
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text("Avilable Time", style: TextStyle(
+                  fontSize: 18
+                ),),
+                SizedBox(
+               width: 180,
+                  child: Text("Monday - Friday 24*7",  style: TextStyle( color: Colors.grey, fontSize: 17),
+                      overflow: TextOverflow.ellipsis,
+                  maxLines: 50,),
+                )
+              ],
+            )
+            ],
+          ),
+          
         ],
       ),
     ),
-    Container()
+    Container(
+
+      child: Image.asset("assets/images/map.png", width: 120),
+    )
   ],
 ),
 Text("Activity", style: TextStyle(
